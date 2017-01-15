@@ -67,10 +67,10 @@ function SGVBall(position, radius, color, angle) {
     this.position = position;
     this.radius = radius;
     this.color = color;
-    this.svg;
-    this.circle;
-    this.head;
-    this.group;
+    this.svg = undefined;
+    this.circle= undefined;
+    this.head= undefined;
+    this.group= undefined;
     this.angle = angle;
     this.velocity = Vector();
     this.acceleration = Vector();
@@ -129,7 +129,6 @@ SGVBall.prototype.update = function () {
     }
 
     if (this.doFriction) {
-        console.log('do');
         this.friction.setComponents(this.angle, this.frictionForce);
     }
 
@@ -137,11 +136,11 @@ SGVBall.prototype.update = function () {
 
     this.svg.style.left = this.position.x;
     this.svg.style.top = this.position.y;
-}
+};
 
 SGVBall.prototype.rotate = function (value) {
     this.group.setAttribute('transform', 'rotate(' + value + ' ' + this.radius + ' ' + this.radius + ')');
-}
+};
 
 SGVBall.prototype.render = function () {
     let xmlns = "http://www.w3.org/2000/svg";
@@ -165,4 +164,4 @@ SGVBall.prototype.render = function () {
     this.head.setAttribute('r', 4);
     this.head.style.fill = 'white';
     this.group.appendChild(this.head);
-}
+};
