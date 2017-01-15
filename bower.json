@@ -1,0 +1,17 @@
+{
+  "name": "11-VectorsAcceleration",
+  "homepage": "https://github.com/estebanpadilla/11-VectorsAcceleration",
+  "authors": [
+    "Esteban Padilla <ep@estebanpadilla.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

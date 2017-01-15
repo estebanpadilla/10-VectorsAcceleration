@@ -1,0 +1,23 @@
+{
+  "name": "11vectorsacceleration",
+  "version": "1.0.0",
+  "description": "Applying acceleration to movement using vectors.",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --s --f *.js, *.html, *.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estebanpadilla/11-VectorsAcceleration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estebanpadilla/11-VectorsAcceleration/issues"
+  },
+  "homepage": "https://github.com/estebanpadilla/11-VectorsAcceleration#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.6"
+  }
+}
